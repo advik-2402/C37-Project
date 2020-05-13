@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="p5.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="./p5.play.js"></script>
+  <script src="js/Form.js"></script>
+  <script src="js/Paint.js"></script>
+  <script src="js/User.js"></script>
+  <script src="The-Avengers-Theme-Song.mp3"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-database.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBjdJoGOTFG8vgKZbuyjjKsnVro42a1wts",
+      authDomain: "canvas-part-ii.firebaseapp.com",
+      databaseURL: "https://canvas-part-ii.firebaseio.com",
+      projectId: "canvas-part-ii",
+      storageBucket: "canvas-part-ii.appspot.com",
+      messagingSenderId: "673744075473",
+      appId: "1:673744075473:web:51e671bf93b00fca1363f0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+
+  <div id="canvascontainer"></div>
+
+  <input type="button" value="CLEAR" onclick="clearCanvas();" />
+
+</body>
+
+</html>
